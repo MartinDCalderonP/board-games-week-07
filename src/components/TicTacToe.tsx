@@ -17,6 +17,9 @@ export default function TicTacToe() {
 				<Button>Next</Button>
 				<Button>Resume</Button>
 				<Button>Previous</Button>
+				<p>Next to Move</p>
+				<div className={styles.nextToMove}>X-O</div>
+				<Button>Reset</Button>
 			</div>
 		</div>
 	);

@@ -22,4 +22,17 @@
 .controls {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	color: white;
+
+	.nextToMove {
+		width: 100px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		border: 1px solid gray;
+		font-size: 7rem;
+	}
 }
