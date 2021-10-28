@@ -1,0 +1,28 @@
+.button {
+	min-width: 120px;
+	background-color: tomato;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	margin: 20px 0 20px;
+	padding: 5px 20px;
+	font-size: 1.2rem;
+	align-self: flex-end;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+	&:hover {
+		border-color: gray;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.disabled {
+	cursor: auto;
+	box-shadow: none;
+
+	&:hover {
+		border-color: lightgray;
+		box-shadow: none;
+	}
+}
