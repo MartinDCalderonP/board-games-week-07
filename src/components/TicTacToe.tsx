@@ -8,8 +8,8 @@ export default function TicTacToe() {
 	return (
 		<div className={styles.ticTacToe}>
 			<div className={styles.grid}>
-				{squares.map(() => (
-					<div className={styles.square} />
+				{squares.map((_, index) => (
+					<div key={`square${index + 1}`} className={styles.square} />
 				))}
 			</div>
 
