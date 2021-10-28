@@ -1,10 +1,12 @@
 import React from 'react';
+import TimeMachine from './components/TimeMachine';
 
 function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+	return (
+		<div>
+			<TimeMachine />
+		</div>
+	);
 }
 
 export default App;
