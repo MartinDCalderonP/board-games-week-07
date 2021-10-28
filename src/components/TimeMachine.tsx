@@ -43,7 +43,7 @@ export default function TimeMachine() {
 			<div className={styles.grid}>
 				{squares.map((_, index) => (
 					<div
-						key={`square${index}`}
+						key={`square${index + 1}`}
 						className={
 							styles.square +
 							(!traversing
