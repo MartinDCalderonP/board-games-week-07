@@ -38,8 +38,6 @@ export default function TimeMachine() {
 		}
 	};
 
-	console.log(counter, record.length, record[counter]);
-
 	return (
 		<div className={styles.timeMachine}>
 			<div className={styles.grid}>
