@@ -1,0 +1,25 @@
+.ticTacToe {
+	display: flex;
+	justify-content: center;
+}
+
+.grid {
+	width: 40vw;
+	display: flex;
+	flex-wrap: wrap;
+
+	.square {
+		width: 150px;
+		height: 150px;
+		margin: 10px;
+		border: 1px solid gray;
+		transition: all 0.3s linear;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+}
