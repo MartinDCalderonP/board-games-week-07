@@ -1,13 +1,11 @@
 import { useEffect, useRef } from 'react';
 
-export default function useTimeMachine<T>(value: T): [T, T[]] {
-	const ref: any = useRef<T>();
+export default function useTimeMachine<T>(value: T): T[] {
 	const record = useRef<T[]>([]);
 
 	useEffect(() => {
-		ref.current = value;
 		record.current.unshift(value);
 	}, [value]);
 
-	return [ref.current, record.current];
+	return record.current;
 }
