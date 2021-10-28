@@ -10,7 +10,7 @@ export default function TimeMachine() {
 	const [currentSquare, setCurrentSquare] = useState(0);
 	const [traversing, setTraversing] = useState(false);
 	const [traversingSquare, setTraversingSquare] = useState(0);
-	const record = useTimeMachine(currentSquare);
+	const [record] = useTimeMachine(currentSquare);
 
 	const handleSquareClick = (index: number) => {
 		if (!traversing && index + 1 !== currentSquare) {
