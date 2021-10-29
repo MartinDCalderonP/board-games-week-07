@@ -16,6 +16,12 @@
 		transition: all 0.3s linear;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 10rem;
+		user-select: none;
 	}
 }
 
@@ -34,5 +40,6 @@
 		margin-top: 20px;
 		border: 1px solid gray;
 		font-size: 7rem;
+		user-select: none;
 	}
 }
