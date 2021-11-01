@@ -12,7 +12,7 @@ export default function TimeMachine() {
 	const [traversingSquare, setTraversingSquare] = useState<number | undefined>(
 		0
 	);
-	const [previousValue, getPreviousValue, reset, recordLength] =
+	const [, getPreviousValue, , recordLength] =
 		useTimeMachine(currentSquare);
 
 	const handleSquareClick = (index: number) => {
