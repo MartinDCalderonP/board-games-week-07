@@ -5,7 +5,7 @@ import TicTacToe from './components/TicTacToe';
 import Button from './components/Button';
 
 function App() {
-	const [game, setGame] = useState('ticTacToe');
+	const [game, setGame] = useState('timeMachine');
 
 	const handleChangeGameButtonClick = () => {
 		setGame(game === 'ticTacToe' ? 'timeMachine' : 'ticTacToe');
