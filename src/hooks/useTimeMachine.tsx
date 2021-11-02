@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 export default function useTimeMachine<T>(
 	value: T
-): [T | undefined, (position: number) => T | undefined, () => void, number] {
+): [T | undefined, (position: number) => T | undefined, () => void, T[]] {
 	const ref = useRef<T>();
 	const record = useRef<T[]>([]);
 
@@ -17,5 +17,5 @@ export default function useTimeMachine<T>(
 		record.current.unshift(value);
 	}, [value]);
 
-	return [ref.current, getPreviousValue, reset, record.current.length];
+	return [ref.current, getPreviousValue, reset, record.current];
 }

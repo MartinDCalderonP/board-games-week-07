@@ -12,8 +12,7 @@ export default function TimeMachine() {
 	const [traversingSquare, setTraversingSquare] = useState<number | undefined>(
 		0
 	);
-	const [, getPreviousValue, , recordLength] =
-		useTimeMachine(currentSquare);
+	const [, getPreviousValue, reset, record] = useTimeMachine(currentSquare);
 
 	const handleSquareClick = (index: number) => {
 		if (!traversing && index + 1 !== currentSquare) {
@@ -42,7 +41,7 @@ export default function TimeMachine() {
 		if (counter) {
 			setTraversingSquare(getPreviousValue(counter));
 
-			if (counter < recordLength - 1) {
+			if (counter < record.length - 1) {
 				setCounter((current) => current && current + 1);
 			}
 		}
@@ -89,7 +88,7 @@ export default function TimeMachine() {
 				<Button
 					onClick={handlePreviousButtonClick}
 					disabled={
-						counter && counter > 0 && counter === recordLength - 1
+						counter && counter > 0 && counter === record.length - 1
 							? true
 							: false
 					}
